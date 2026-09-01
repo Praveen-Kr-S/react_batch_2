@@ -1,15 +1,15 @@
 
 import './App.css'
-import Learn_react from './components/Learn_react'
+
+import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <>
-      <h1>Praveen Kumar</h1>
-      <div>
-        <Learn_react />
-      </div>
-    </>
+    <div className='container bg-primary'>
+      
+      <Navbar />
+      
+    </div>
   )
 }
 
