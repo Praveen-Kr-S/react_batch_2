@@ -1,9 +1,9 @@
 import React from 'react'
 
-const UserName = () => {
+const UserName = (props) => {
   return (
     <div className='w-25 text-center bg-warning'>
-        <h1 className='text-light'>Praveen Kumar</h1>
+        <h1 className='text-light'>{props.name}</h1>
     </div>
   )
 }
