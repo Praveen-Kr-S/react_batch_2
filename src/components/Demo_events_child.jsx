@@ -3,7 +3,7 @@ import react from "../assets/hitach.jpg"
 import vite from "../assets/pic1.jpg"
 import hero from "../assets/pic2.jpg"
 
-const Demo_events_child = (props) => {
+function Demo_events_child (props) {
 
     const data = [react,vite,hero];
 
