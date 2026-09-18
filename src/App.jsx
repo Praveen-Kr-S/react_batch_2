@@ -10,11 +10,14 @@ import Learn_useEffect from './components/Learn_useEffect.jsx'
 import Navbar from './components/Navbar.jsx'
 import Object_UseState from './components/Object_UseState.jsx'
 
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+
+
 function App() {
   return (
     <div className='container bg-primary pb-5'>
       
-      <Navbar />
+      {/* <Navbar />
       <Demo_events />
       <Learn_hooks />
       <Learn_FormCOntrol />
@@ -25,8 +28,18 @@ function App() {
       <hr />
       <Learn_ArrayUseInUseState />
       <hr />  
-      <Object_UseState />
-      
+      <Object_UseState /> */}
+
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Learn_useEffect />} />
+          <Route path='/use/effect/' element={<Learn_useEffect />} />
+          <Route path='/form/control/' element={<Learn_FormCOntrol />} />
+          <Route path='/array/use/state/' element={<Learn_ArrayUseInUseState />} />
+          <Route path='/object/use/state/' element={<Object_UseState />} />
+        </Routes>
+      </BrowserRouter>    
     </div>
   )
 }

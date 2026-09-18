@@ -25,7 +25,11 @@ const Learn_FormCOntrol = () => {
             user_password : password
         }
 
-        console.log(FormData)
+        console.log(FormData);
+
+        setUserName("");
+        setPassword("")
+
     }
 
 

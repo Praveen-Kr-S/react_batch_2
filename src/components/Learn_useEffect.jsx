@@ -11,10 +11,10 @@ const Learn_useEffect = () => {
     // Act every actions
     useEffect(() => {console.log("Data Changed")})
 
-    // Act based on dependence
+    // // Act based on dependence
     useEffect(() => {console.log("dd useEffect Performed")},[dd])
 
-    // Run Only when page is loaded
+    // // Run Only when page is loaded
     useEffect(() => {console.log("Page Realoaded...")},[])
 
   return (

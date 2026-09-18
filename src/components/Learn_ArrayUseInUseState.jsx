@@ -4,6 +4,8 @@ const Learn_ArrayUseInUseState = () => {
     const [value,setValue]=useState(["Python","React","Express.js","Django"]);
 
     function addValueHandler(){
+        // setValue("MongoDB")
+        // setValue(["MongoDB"])
         setValue([...value,"MongoDB"])
     }
 
