@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Learn_useEffect = () => {
 
@@ -17,6 +18,11 @@ const Learn_useEffect = () => {
     // // Run Only when page is loaded
     useEffect(() => {console.log("Page Realoaded...")},[])
 
+
+    // useNavigate in react router
+
+    const navigate = useNavigate();
+
   return (
     <div>
         <h1>Use Effect Hook</h1>
@@ -30,7 +36,12 @@ const Learn_useEffect = () => {
             <button type='submit' onClick={() => {setDd(dd+1)}}>+</button>
             <h2>{dd}</h2>
             <button type="submit" onClick={() => {setDd(dd-1)}}>-</button>
-        </div>  
+        </div> 
+
+
+        <div>
+            <button className='btn btn-p-5 bg-warning' type='submit' onClick={() => navigate("/form/control/")}>Form Control</button>
+        </div> 
     </div>
   )
 }

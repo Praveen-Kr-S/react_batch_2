@@ -13,7 +13,7 @@ const Details = ({h,p,a,c}) => {
         </ul> */}
 
         <nav className='bg-secondary h-100'>
-          <ul className='d-flex justify-content-evenly align-items-center h-100 fs-3'>
+          <ul className='d-flex justify-content-evenly align-items-center h-100 fs-4'>
             <li>
                 <NavLink to={"/use/effect/"}>{h}</NavLink>
             </li>
@@ -25,6 +25,9 @@ const Details = ({h,p,a,c}) => {
             </li>
             <li>
                 <NavLink to={'/form/control/'}>{c}</NavLink>
+            </li>
+            <li>
+                <NavLink to={'/class/component/'}>ClassComponent</NavLink>
             </li>
           </ul>
         </nav>

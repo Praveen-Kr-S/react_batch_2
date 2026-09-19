@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Learn_FormCOntrol = () => {
 
@@ -12,9 +13,7 @@ const Learn_FormCOntrol = () => {
     }
 
     function UserPasswordHandler(e){
-
         setPassword(e.target.value)
-
     }
 
     function FormSubmitHandler(e){
@@ -32,6 +31,9 @@ const Learn_FormCOntrol = () => {
 
     }
 
+    // useNavigate
+    const navigate = useNavigate();
+    
 
   return (
     <div className='container' onSubmit={(event) => {FormSubmitHandler(event)}}>
@@ -46,7 +48,9 @@ const Learn_FormCOntrol = () => {
                 <input type="password" className='form-control w-50 fs-4 text-dark' value={password} onChange={(event) => {UserPasswordHandler(event)}} />
             </div>
             <button className='btn bg-secondary mt-3 text-light fs-4' type='submit'>Submit</button>
-            
+            <br /><br />
+
+            <button className='btn btn-p-5 bg-warning' type="submit" onClick={() => {navigate("/")}}>Home Page</button>
         </form>
     </div>
 

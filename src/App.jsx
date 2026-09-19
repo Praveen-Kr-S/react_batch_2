@@ -2,6 +2,7 @@
 import './App.css'
 import Demo_events from './components/Demo_events.jsx'
 import Learn_ArrayUseInUseState from './components/Learn_ArrayUseInUseState.jsx'
+import Demo from './components/Learn_Class_Component.jsx'
 import { Learn_ConditionalRendering } from './components/Learn_ConditionalRendering.jsx'
 import Learn_FormCOntrol from './components/Learn_FormCOntrol.jsx'
 import Learn_hooks from './components/Learn_hooks.jsx'
@@ -38,6 +39,7 @@ function App() {
           <Route path='/form/control/' element={<Learn_FormCOntrol />} />
           <Route path='/array/use/state/' element={<Learn_ArrayUseInUseState />} />
           <Route path='/object/use/state/' element={<Object_UseState />} />
+          <Route path='/class/component/' element={<Demo />} />
         </Routes>
       </BrowserRouter>    
     </div>

@@ -1,6 +1,10 @@
 import React,{useState} from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Learn_ArrayUseInUseState = () => {
+
+    const navigate = useNavigate();
+
     const [value,setValue]=useState(["Python","React","Express.js","Django"]);
 
     function addValueHandler(){
@@ -16,6 +20,9 @@ const Learn_ArrayUseInUseState = () => {
         {/* {value} */}
 
         <button type='submit' onClick={addValueHandler}>Add Value</button>
+
+      <br /><br />
+        <button className='btn btn-p-5 bg-warning' type='submit' onClick={() => navigate("/object/use/state/")}>Object State</button>
     </div>
   )
 }
